@@ -12,7 +12,7 @@ export interface TdtStyle {
  */
 const getRandomToken = (): string => {
   const index = Math.floor(Math.random() * TDT_KEYS.length)
-  return TDT_KEYS[index]
+  return TDT_KEYS[index] || ''
 }
 
 /**
